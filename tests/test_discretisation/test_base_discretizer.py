@@ -4,7 +4,7 @@ import pytest
 from sklearn.datasets import fetch_california_housing
 import polars as pl
 
-from fast_feature.discretisation.base_discretiser import BaseDiscretiser
+from quick_feature.discretisation.base_discretiser import BaseDiscretiser
 
 
 # test init params

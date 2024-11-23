@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StringSimilarityEncoder &mdash; fast_feature 0.0.1 documentation</title>
+  <title>StringSimilarityEncoder &mdash; quick_feature 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -32,7 +32,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            fast_feature
+            quick_feature
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -52,10 +52,10 @@
 <li class="toctree-l2"><a class="reference internal" href="DecisionTreeEncoder.html">DecisionTreeEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="RareLabelEncoder.html">RareLabelEncoder</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">StringSimilarityEncoder</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fast_feature.encoding.StringSimilarityEncoder"><code class="docutils literal notranslate"><span class="pre">StringSimilarityEncoder</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.encoding.StringSimilarityEncoder.fit"><code class="docutils literal notranslate"><span class="pre">StringSimilarityEncoder.fit()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.encoding.StringSimilarityEncoder.inverse_transform"><code class="docutils literal notranslate"><span class="pre">StringSimilarityEncoder.inverse_transform()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.encoding.StringSimilarityEncoder.transform"><code class="docutils literal notranslate"><span class="pre">StringSimilarityEncoder.transform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quick_feature.encoding.StringSimilarityEncoder"><code class="docutils literal notranslate"><span class="pre">StringSimilarityEncoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.encoding.StringSimilarityEncoder.fit"><code class="docutils literal notranslate"><span class="pre">StringSimilarityEncoder.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.encoding.StringSimilarityEncoder.inverse_transform"><code class="docutils literal notranslate"><span class="pre">StringSimilarityEncoder.inverse_transform()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.encoding.StringSimilarityEncoder.transform"><code class="docutils literal notranslate"><span class="pre">StringSimilarityEncoder.transform()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -81,7 +81,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">fast_feature</a>
+          <a href="../index.html">quick_feature</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -103,8 +103,8 @@
   <section id="stringsimilarityencoder">
 <h1>StringSimilarityEncoder<a class="headerlink" href="#stringsimilarityencoder" title="Link to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="fast_feature.encoding.StringSimilarityEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fast_feature.encoding.</span></span><span class="sig-name descname"><span class="pre">StringSimilarityEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_categories</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keywords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">missing_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'impute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.StringSimilarityEncoder" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.StringSimilarityEncoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">quick_feature.encoding.</span></span><span class="sig-name descname"><span class="pre">StringSimilarityEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_categories</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keywords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">missing_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'impute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/encoding/similarity_encoder.py#L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.StringSimilarityEncoder" title="Link to this definition"></a></dt>
 <dd><p>The StringSimilarityEncoder() replaces categorical variables with a set of float
 variables that capture the similarity between the category names. The new variables
 have values between 0 and 1, where 0 indicates no similarity and 1 is an exact
@@ -143,7 +143,6 @@ encoder will find and encode all categorical variables.</p>
 Encoding numerical variables with similarity measures make sense for example for
 variables like barcodes. In this case, you can either enter the list of variables
 to encode (recommended), or the transformer will automatically select all variables.</p>
-<p>More details in the <span class="xref std std-ref">User Guide</span>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -222,7 +221,7 @@ numeric.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="OneHotEncoder.html#fast_feature.encoding.OneHotEncoder" title="fast_feature.encoding.OneHotEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fast_feature.encoding.OneHotEncoder</span></code></a></dt><dd></dd>
+<dt><a class="reference internal" href="OneHotEncoder.html#quick_feature.encoding.OneHotEncoder" title="quick_feature.encoding.OneHotEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quick_feature.encoding.OneHotEncoder</span></code></a></dt><dd></dd>
 <dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">dirty_cat.SimilarityEncoder</span></code></dt><dd></dd>
 </dl>
 </div>
@@ -234,12 +233,12 @@ seen and unseen categories.</p>
 transformation. In their place, the binary variables are returned.</p>
 <p class="rubric">References</p>
 <div role="list" class="citation-list">
-<div class="citation" id="r3c5a882ab68c-1" role="doc-biblioentry">
+<div class="citation" id="r5bb18aacaf2c-1" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>Cerda P, Varoquaux G, Kégl B. “Similarity encoding for learning with dirty
 categorical variables”. Machine Learning, Springer Verlag, 2018.</p>
 </div>
-<div class="citation" id="r3c5a882ab68c-2" role="doc-biblioentry">
+<div class="citation" id="r5bb18aacaf2c-2" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>Cerda P, Varoquaux G. “Encoding high-cardinality string categorical
 variables”. IEEE Transactions on Knowledge &amp; Data Engineering, 2020.</p>
@@ -247,8 +246,9 @@ variables”. IEEE Transactions on Knowledge &amp; Data Engineering, 2020.</p>
 </div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">fast_feature.encoding</span> <span class="kn">import</span> <span class="n">StringSimilarityEncoder</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">x1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="n">x2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;dig&quot;</span><span class="p">,</span> <span class="s2">&quot;dagger&quot;</span><span class="p">,</span> <span class="s2">&quot;hi&quot;</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">polars</span> <span class="k">as</span> <span class="nn">pl</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">quick_feature.encoding</span> <span class="kn">import</span> <span class="n">StringSimilarityEncoder</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">x1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="n">x2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;dig&quot;</span><span class="p">,</span> <span class="s2">&quot;dagger&quot;</span><span class="p">,</span> <span class="s2">&quot;hi&quot;</span><span class="p">]))</span> <span class="c1"># or X = pl.DataFrame(dict(x1 = [1,2,3,4], x2 = [&quot;dog&quot;, &quot;dig&quot;, &quot;dagger&quot;, &quot;hi&quot;])) </span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sse</span> <span class="o">=</span> <span class="n">StringSimilarityEncoder</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sse</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sse</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
@@ -260,8 +260,8 @@ variables”. IEEE Transactions on Knowledge &amp; Data Engineering, 2020.</p>
 </pre></div>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.encoding.StringSimilarityEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.StringSimilarityEncoder.fit" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.StringSimilarityEncoder.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/encoding/similarity_encoder.py#L214"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.StringSimilarityEncoder.fit" title="Link to this definition"></a></dt>
 <dd><p>Learns the unique categories per variable. If top_categories is indicated,
 it will learn the most popular categories. Alternatively, it learns all
 unique categories per variable.</p>
@@ -279,14 +279,14 @@ Can be the entire dataframe, not just the variables to encode.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.encoding.StringSimilarityEncoder.inverse_transform">
-<span class="sig-name descname"><span class="pre">inverse_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.StringSimilarityEncoder.inverse_transform" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.StringSimilarityEncoder.inverse_transform">
+<span class="sig-name descname"><span class="pre">inverse_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/encoding/similarity_encoder.py#L363"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.StringSimilarityEncoder.inverse_transform" title="Link to this definition"></a></dt>
 <dd><p>inverse_transform is not implemented for this transformer.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.encoding.StringSimilarityEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.StringSimilarityEncoder.transform" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.StringSimilarityEncoder.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/../../miniconda3/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L291"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.StringSimilarityEncoder.transform" title="Link to this definition"></a></dt>
 <dd><p>Replaces the categorical variables with the similarity variables.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
@@ -300,7 +300,7 @@ Can be the entire dataframe, not just the variables to encode.</p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt>X_new: polars or pandas dataframe.</dt><dd><p>The transformed dataframe. The shape of the dataframe will be different from
+<dt>X_new: polars dataframe.</dt><dd><p>The transformed dataframe. The shape of the dataframe will be different from
 the original as it includes the similarity variables in place of the
 original categorical ones.</p>
 </dd>

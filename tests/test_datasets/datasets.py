@@ -1,7 +1,7 @@
 import pytest
 from pandas import DataFrame
 
-from fast_feature.datasets import load_titanic
+from quick_feature.datasets import load_titanic
 
 
 def test_load_titanic():

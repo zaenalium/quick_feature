@@ -4,7 +4,7 @@ import pytest
 from sklearn.pipeline import Pipeline
 from polars.testing import assert_frame_equal
 import polars.selectors as cs
-from fast_feature.encoding import OneHotEncoder
+from quick_feature.encoding import OneHotEncoder
 
 
 @pytest.mark.parametrize("index_", [[1, 2, 3], [3, 2, 1], [4, 9, 2]])

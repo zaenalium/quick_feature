@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import polars as pl
-from fast_feature._base_transformers.mixins import TransformXyMixin
+from quick_feature._base_transformers.mixins import TransformXyMixin
 
 
 class MockTransformer(TransformXyMixin):

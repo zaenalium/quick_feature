@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 from sklearn.exceptions import NotFittedError
 import polars as pl
-from fast_feature.discretisation import DecisionTreeDiscretiser, EqualWidthDiscretiser
+from quick_feature.discretisation import DecisionTreeDiscretiser, EqualWidthDiscretiser
 
 
 # init parameters

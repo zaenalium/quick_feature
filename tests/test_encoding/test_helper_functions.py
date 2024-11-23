@@ -1,6 +1,6 @@
 import pytest
 
-from fast_feature.encoding._helper_functions import check_parameter_unseen
+from quick_feature.encoding._helper_functions import check_parameter_unseen
 
 
 @pytest.mark.parametrize("accepted", ["one", False, [1, 2], ("one", "two"), 1])

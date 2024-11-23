@@ -4,7 +4,7 @@ from numpy import nan
 from sklearn.exceptions import NotFittedError
 import polars as pl
 from polars.testing import assert_frame_equal
-from fast_feature.encoding import OrdinalEncoder
+from quick_feature.encoding import OrdinalEncoder
 
 
 def test_ordered_encoding_1_variable(df_enc):

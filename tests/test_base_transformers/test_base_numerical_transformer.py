@@ -2,7 +2,7 @@ import pytest
 from numpy import inf
 from polars.testing import assert_frame_equal
 import polars as pl
-from fast_feature._base_transformers.base_numerical import BaseNumericalTransformer
+from quick_feature._base_transformers.base_numerical import BaseNumericalTransformer
 from tests.estimator_checks.non_fitted_error_checks import check_raises_non_fitted_error
 
 

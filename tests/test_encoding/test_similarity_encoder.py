@@ -3,8 +3,8 @@ from difflib import SequenceMatcher
 import pandas as pd
 import pytest
 import polars as pl
-from fast_feature.encoding import StringSimilarityEncoder
-from fast_feature.encoding.similarity_encoder import _gpm_fast
+from quick_feature.encoding import StringSimilarityEncoder
+from quick_feature.encoding.similarity_encoder import _gpm_fast
 
 
 @pytest.mark.parametrize(

@@ -27,7 +27,7 @@ from tests.estimator_checks.variable_selection_checks import (
 )
 
 
-def check_fast_feature_estimator(estimator, needs_group: bool = False):
+def check_quick_feature_estimator(estimator, needs_group: bool = False):
     """
     Performs checks of common functionality to all transformers.
 

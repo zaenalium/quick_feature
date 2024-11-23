@@ -1,6 +1,6 @@
 EqualFrequencyDiscretiser
 =========================
 
-.. autoclass:: fast_feature.discretisation.EqualFrequencyDiscretiser
+.. autoclass:: quick_feature.discretisation.EqualFrequencyDiscretiser
     :members:
 

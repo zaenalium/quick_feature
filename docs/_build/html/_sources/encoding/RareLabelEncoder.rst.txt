@@ -2,6 +2,6 @@ RareLabelEncoder
 ================
 
 
-.. autoclass:: fast_feature.encoding.RareLabelEncoder
+.. autoclass:: quick_feature.encoding.RareLabelEncoder
     :members:
 

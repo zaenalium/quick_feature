@@ -6,7 +6,7 @@ from numpy import nan
 from sklearn.exceptions import NotFittedError
 from polars.testing import assert_frame_equal
 
-from fast_feature.encoding import CountFrequencyEncoder
+from quick_feature.encoding import CountFrequencyEncoder
 import polars as pl
 
 # init parameters

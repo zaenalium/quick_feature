@@ -16,7 +16,7 @@ from datetime import datetime
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath("."))
 sys.path.insert(0, os.path.abspath("../"))
-sys.path.insert(1, os.path.dirname(os.path.abspath("../")) + os.sep + "fast_feature")
+sys.path.insert(1, os.path.dirname(os.path.abspath("../")) + os.sep + "quick_feature")
 sys.path.insert(0, os.path.abspath("sphinxext"))
 from github_link import make_linkcode_resolve
 
@@ -49,7 +49,7 @@ source_suffix = ".rst"
 # The master toctree document.
 master_doc = "index"
 
-project = 'fast_feature'
+project = 'quick_feature'
 copyright = '2024, Ahmad Zaenal'
 author = 'Ahmad Zaenal'
 release = '0.0.1'
@@ -59,7 +59,7 @@ release = '0.0.1'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 
-VERSION_PATH = "../fast_feature/VERSION"
+VERSION_PATH = "../quick_feature/VERSION"
 with open(VERSION_PATH, "r") as version_file:
     v = version_file.read().strip()
 
@@ -109,8 +109,8 @@ html_static_path = ['_static']
 
 # The following is used by sphinx.ext.linkcode to provide links to github
 linkcode_resolve = make_linkcode_resolve(
-    "fast_feature",
-    "https://github.com/fast_feature_pl/fast_feature/"
+    "quick_feature",
+    "https://github.com/quick_feature_pl/quick_feature/"
     "blob/master/"
     "{package}/{path}#L{lineno}",
 )

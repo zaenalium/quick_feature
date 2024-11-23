@@ -1,10 +1,10 @@
 .. -*- mode: rst -*-
-.. currentmodule:: fast_feature.discretisation
+.. currentmodule:: quick_feature.discretisation
 
 Discretisation
 ==============
 
-fast_feature's discretisation transformers transform continuous variables into
+quick_feature's discretisation transformers transform continuous variables into
 discrete features. This is accomplished, in general, by sorting the variable values
 into continuous intervals.
 

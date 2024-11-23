@@ -6,7 +6,7 @@ from scipy.stats import skewnorm
 from sklearn.datasets import fetch_california_housing
 import polars as pl
 from polars.testing import assert_frame_equal
-from fast_feature.discretisation import ArbitraryDiscretiser
+from quick_feature.discretisation import ArbitraryDiscretiser
 
 
 def test_arbitrary_discretiser():

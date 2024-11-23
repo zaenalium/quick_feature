@@ -1,6 +1,6 @@
 OneHotEncoder
 =============
 
-.. autoclass:: fast_feature.encoding.OneHotEncoder
+.. autoclass:: quick_feature.encoding.OneHotEncoder
     :members:
 

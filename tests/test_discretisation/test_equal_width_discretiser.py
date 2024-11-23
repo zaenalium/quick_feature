@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 from sklearn.exceptions import NotFittedError
 
-from fast_feature.discretisation import EqualWidthDiscretiser
+from quick_feature.discretisation import EqualWidthDiscretiser
 
 
 def test_automatically_find_variables_and_return_as_numeric(df_normal_dist):

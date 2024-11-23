@@ -1,6 +1,6 @@
 import pytest
 
-from fast_feature._check_init_parameters.check_variables import (
+from quick_feature._check_init_parameters.check_variables import (
     _check_variables_input_value,
 )
 

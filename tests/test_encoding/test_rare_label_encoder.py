@@ -6,7 +6,7 @@ import pytest
 import polars as pl
 from polars.testing import assert_frame_equal
 import numpy 
-from fast_feature.encoding import RareLabelEncoder
+from quick_feature.encoding import RareLabelEncoder
 
 
 def test_defo_params_plus_automatically_find_variables(df_enc_big):

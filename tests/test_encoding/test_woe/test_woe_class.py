@@ -4,7 +4,7 @@ import pytest
 import polars as pl
 from polars.testing import assert_frame_equal
 
-from fast_feature.encoding.woe import WoE
+from quick_feature.encoding.woe import WoE
 
 
 def test_woe_calculation(df_enc):

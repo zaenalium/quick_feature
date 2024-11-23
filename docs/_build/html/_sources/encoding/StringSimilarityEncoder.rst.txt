@@ -1,6 +1,6 @@
 StringSimilarityEncoder
 =======================
 
-.. autoclass:: fast_feature.encoding.StringSimilarityEncoder
+.. autoclass:: quick_feature.encoding.StringSimilarityEncoder
     :members:
 

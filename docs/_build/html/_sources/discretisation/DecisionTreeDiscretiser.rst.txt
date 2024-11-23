@@ -1,5 +1,5 @@
 DecisionTreeDiscretiser
 =======================
 
-.. autoclass:: fast_feature.discretisation.DecisionTreeDiscretiser
+.. autoclass:: quick_feature.discretisation.DecisionTreeDiscretiser
     :members:

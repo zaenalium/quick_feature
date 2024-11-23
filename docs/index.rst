@@ -1,9 +1,9 @@
-.. fast_feature documentation master file, created by
+.. quick_feature documentation master file, created by
    sphinx-quickstart on Sun Oct 27 14:02:36 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-fast_feature documentation
+quick_feature documentation
 ===============================
 
 Add your content using ``reStructuredText`` syntax. See the
@@ -16,7 +16,7 @@ documentation for details.
 API
 ===
 
-Full API documentation for fast_feature transformers.
+Full API documentation for quick_feature transformers.
 
 Transformation
 --------------

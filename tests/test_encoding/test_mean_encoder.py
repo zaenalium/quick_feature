@@ -3,7 +3,7 @@ import pytest
 from numpy import nan
 from sklearn.exceptions import NotFittedError
 
-from fast_feature.encoding import MeanEncoder
+from quick_feature.encoding import MeanEncoder
 import polars as pl
 from polars.testing import assert_frame_equal
 

@@ -1,6 +1,6 @@
 DecisionTreeEncoder
 ===================
 
-.. autoclass:: fast_feature.encoding.DecisionTreeEncoder
+.. autoclass:: quick_feature.encoding.DecisionTreeEncoder
     :members:
 

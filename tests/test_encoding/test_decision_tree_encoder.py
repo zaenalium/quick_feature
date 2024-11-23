@@ -7,7 +7,7 @@ import polars as pl
 from sklearn.exceptions import NotFittedError
 from polars.testing import assert_frame_equal
 
-from fast_feature.encoding import DecisionTreeEncoder
+from quick_feature.encoding import DecisionTreeEncoder
 
 
 # init parameters

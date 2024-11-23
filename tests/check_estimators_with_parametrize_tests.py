@@ -1,5 +1,5 @@
 """
-This file is only intended to help understand check_estimator tests on fast_feature
+This file is only intended to help understand check_estimator tests on quick_feature
 transformers. It is not run as part of the battery of acceptance tests.
 """
 
@@ -7,7 +7,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
 from sklearn.utils.estimator_checks import parametrize_with_checks
 
-from fast_feature.encoding import (
+from quick_feature.encoding import (
     CountFrequencyEncoder,
     DecisionTreeEncoder,
     MeanEncoder,
@@ -16,7 +16,7 @@ from fast_feature.encoding import (
     RareLabelEncoder,
     WoEEncoder,
 )
-from fast_feature.imputation import (
+from quick_feature.imputation import (
     AddMissingIndicator,
     ArbitraryNumberImputer,
     CategoricalImputer,
@@ -25,8 +25,8 @@ from fast_feature.imputation import (
     MeanMedianImputer,
     RandomSampleImputer,
 )
-from fast_feature.outliers import ArbitraryOutlierCapper, OutlierTrimmer, Winsorizer
-from fast_feature.selection import (
+from quick_feature.outliers import ArbitraryOutlierCapper, OutlierTrimmer, Winsorizer
+from quick_feature.selection import (
     DropConstantFeatures,
     DropCorrelatedFeatures,
     DropDuplicateFeatures,
@@ -39,16 +39,16 @@ from fast_feature.selection import (
     SelectByTargetMeanPerformance,
     SmartCorrelatedSelection,
 )
-from fast_feature.timeseries.forecasting import LagFeatures
-from fast_feature.transformation import (
+from quick_feature.timeseries.forecasting import LagFeatures
+from quick_feature.transformation import (
     BoxCoxTransformer,
     LogTransformer,
     PowerTransformer,
     ReciprocalTransformer,
     YeoJohnsonTransformer,
 )
-from fast_feature.wrappers import SklearnTransformerWrapper
-from fast_feature.creation import DecisionTreeFeatures, CyclicalFeatures
+from quick_feature.wrappers import SklearnTransformerWrapper
+from quick_feature.creation import DecisionTreeFeatures, CyclicalFeatures
 
 
 # creation

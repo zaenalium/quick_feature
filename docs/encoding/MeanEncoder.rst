@@ -1,6 +1,6 @@
 MeanEncoder
 ===========
 
-.. autoclass:: fast_feature.encoding.MeanEncoder
+.. autoclass:: quick_feature.encoding.MeanEncoder
     :members:
 

@@ -1,6 +1,6 @@
 import pytest
 
-from fast_feature._check_init_parameters.check_input_dictionary import (
+from quick_feature._check_init_parameters.check_input_dictionary import (
     _check_numerical_dict,
 )
 

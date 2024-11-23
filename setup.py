@@ -8,22 +8,23 @@ import re
 
 
 
-VERSION_PATH = "fast_feature/VERSION"
+VERSION_PATH = "quick_feature/VERSION"
 with open(VERSION_PATH, "r") as version_file:
     __version__ = version_file.read().strip()
 
 
 setup(
-        name = 'fast_feature',
+        name = 'quick_feature',
         author = 'Ahmad Zaenal',
         description = 'Fast and Efficient Feature engineering with Polars based dataframe',
         long_description = 'Fast and Efficient Feature engineering with Polars based dataframe',
         license = 'MIT',
-        project_urls = {'Github': 'https://github.com/zaenalium/fast_feature', 'Documentation': 'https://fast_feature.readthedocs.io/en/latest/'},
+        project_urls = {'Github': 'https://github.com/zaenalium/quick_feature', 'Documentation': 'https://quick_feature.readthedocs.io/en/latest/'},
         include_package_data=True,
         version=__version__,
-        packages =  ['fast_feature'], #find_packages(),
+        packages =  ['quick_feature'], #find_packages(),
         author_email='ahmadzaenal125@gmail.com',
         keywords='feature engineering, encoding, discretisation',  # Optional
-        install_requires=['numpy','pandas>=0.25.0','matplotlib','scikit-learn>=0.19.1', 'statsmodels', 'patsy'],  # Optional
+        install_requires=['numpy>=1.18.2', 'pandas>=2.2.0', 'scikit-learn>=1.4.0', 'scipy>=1.4.1',
+                           'statsmodels>=0.11.1', 'polars>=1.8.2', 'numpydoc', 'sphinx', 'sphinx_autodoc_typehints', 'sphinx_rtd_theme'],  # Optional
      )

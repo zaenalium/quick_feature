@@ -13,7 +13,7 @@ The `check` functions check that the list of variables are all of the desired da
 
 The `retain` functions select the variables in a list if they fulfill a condition.
 
-These functions are used under-the-hood by all fast_feature transformers to select the
+These functions are used under-the-hood by all quick_feature transformers to select the
 variables that they will modify.
 
 .. toctree::

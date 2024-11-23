@@ -1,6 +1,6 @@
 ﻿find_all_variables
 ==================
 
-.. currentmodule:: fast_feature.variable_handling
+.. currentmodule:: quick_feature.variable_handling
 
 .. autofunction:: find_all_variables

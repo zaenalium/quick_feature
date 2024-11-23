@@ -6,14 +6,14 @@ import pytest
 from sklearn.pipeline import Pipeline
 from sklearn.utils.estimator_checks import check_estimator
 
-from fast_feature.discretisation import (
+from quick_feature.discretisation import (
     ArbitraryDiscretiser,
     DecisionTreeDiscretiser,
     EqualFrequencyDiscretiser,
     EqualWidthDiscretiser,
     GeometricWidthDiscretiser,
 )
-from tests.estimator_checks.estimator_checks import check_fast_feature_estimator
+from tests.estimator_checks.estimator_checks import check_quick_feature_estimator
 
 _estimators = [
     DecisionTreeDiscretiser(regression=False),
@@ -30,10 +30,10 @@ def test_check_estimator_from_sklearn(estimator):
 
 
 @pytest.mark.parametrize("estimator", _estimators)
-def test_check_estimator_from_fast_feature(estimator):
+def test_check_estimator_from_quick_feature(estimator):
     if estimator.__class__.__name__ == "ArbitraryDiscretiser":
         estimator.set_params(binning_dict={"var_1": [0]})
-    return check_fast_feature_estimator(estimator)
+    return check_quick_feature_estimator(estimator)
 
 
 @pytest.mark.parametrize("transformer", _estimators)

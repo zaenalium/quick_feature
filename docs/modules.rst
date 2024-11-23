@@ -1,7 +1,7 @@
-fast_feature
+quick_feature
 =================
 
 .. toctree::
    :maxdepth: 4
 
-   fast_feature
+   quick_feature

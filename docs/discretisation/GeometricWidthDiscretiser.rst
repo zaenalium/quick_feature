@@ -1,5 +1,5 @@
 GeometricWidthDiscretiser
 =========================
 
-.. autoclass:: fast_feature.discretisation.GeometricWidthDiscretiser
+.. autoclass:: quick_feature.discretisation.GeometricWidthDiscretiser
     :members:

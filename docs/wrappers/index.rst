@@ -1,11 +1,11 @@
 .. -*- mode: rst -*-
 
-.. currentmodule:: fast_feature.wrappers
+.. currentmodule:: quick_feature.wrappers
 
 Scikit-learn Wrapper
 ====================
 
-fast_feature's Scikit-learn wrappers wrap Scikit-learn transformers allowing their
+quick_feature's Scikit-learn wrappers wrap Scikit-learn transformers allowing their
 implementation only on a selected subset of features.
 
 .. toctree::

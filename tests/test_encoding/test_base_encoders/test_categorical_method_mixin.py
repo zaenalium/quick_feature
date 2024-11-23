@@ -4,7 +4,7 @@ import polars as pl
 import pytest
 from polars.testing import assert_frame_equal
 
-from fast_feature.encoding.base_encoder import CategoricalMethodsMixin
+from quick_feature.encoding.base_encoder import CategoricalMethodsMixin
 
 
 class MockClassFit(CategoricalMethodsMixin):

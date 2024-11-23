@@ -1,6 +1,6 @@
 import pytest
 
-from fast_feature.encoding.base_encoder import CategoricalInitMixin
+from quick_feature.encoding.base_encoder import CategoricalInitMixin
 
 
 @pytest.mark.parametrize("param", [1, "hola", [1, 2, 0], (True, False)])

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WoEEncoder &mdash; fast_feature 0.0.1 documentation</title>
+  <title>WoEEncoder &mdash; quick_feature 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -32,7 +32,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            fast_feature
+            quick_feature
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -49,9 +49,9 @@
 <li class="toctree-l2"><a class="reference internal" href="OrdinalEncoder.html">OrdinalEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="MeanEncoder.html">MeanEncoder</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">WoEEncoder</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fast_feature.encoding.WoEEncoder"><code class="docutils literal notranslate"><span class="pre">WoEEncoder</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.encoding.WoEEncoder.fit"><code class="docutils literal notranslate"><span class="pre">WoEEncoder.fit()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.encoding.WoEEncoder.transform"><code class="docutils literal notranslate"><span class="pre">WoEEncoder.transform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quick_feature.encoding.WoEEncoder"><code class="docutils literal notranslate"><span class="pre">WoEEncoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.encoding.WoEEncoder.fit"><code class="docutils literal notranslate"><span class="pre">WoEEncoder.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.encoding.WoEEncoder.transform"><code class="docutils literal notranslate"><span class="pre">WoEEncoder.transform()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -80,7 +80,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">fast_feature</a>
+          <a href="../index.html">quick_feature</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -102,8 +102,8 @@
   <section id="woeencoder">
 <h1>WoEEncoder<a class="headerlink" href="#woeencoder" title="Link to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="fast_feature.encoding.WoEEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fast_feature.encoding.</span></span><span class="sig-name descname"><span class="pre">WoEEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unseen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ignore'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.WoEEncoder" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.WoEEncoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">quick_feature.encoding.</span></span><span class="sig-name descname"><span class="pre">WoEEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unseen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ignore'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/encoding/woe.py#L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.WoEEncoder" title="Link to this definition"></a></dt>
 <dd><p>The WoEEncoder() replaces categories by the weight of evidence
 (WoE). The WoE was used primarily in the financial sector to create credit risk
 scorecards.</p>
@@ -123,7 +123,6 @@ the transformer will automatically select all variables.</p>
 terms in the WoE equation are 0 for a given category, the encoder will return an
 error. If this happens, try grouping less frequent categories. Alternatively,
 you can now add a fill_value (see parameter below).</p>
-<p>More details in the <span class="xref std std-ref">User Guide</span>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -196,8 +195,8 @@ of denominators or numerators that equal zero.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="RareLabelEncoder.html#fast_feature.encoding.RareLabelEncoder" title="fast_feature.encoding.RareLabelEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fast_feature.encoding.RareLabelEncoder</span></code></a></dt><dd></dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">fast_feature.discretisation</span></code></dt><dd></dd>
+<dt><a class="reference internal" href="RareLabelEncoder.html#quick_feature.encoding.RareLabelEncoder" title="quick_feature.encoding.RareLabelEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quick_feature.encoding.RareLabelEncoder</span></code></a></dt><dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">quick_feature.discretisation</span></code></dt><dd></dd>
 <dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">category_encoders.woe.WOEEncoder</span></code></dt><dd></dd>
 </dl>
 </div>
@@ -211,7 +210,8 @@ RareLabelEncoder().</p>
 <a class="reference external" href="https://contrib.scikit-learn.org/category_encoders/">Category encoders</a></p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">fast_feature.encoding</span> <span class="kn">import</span> <span class="n">WoEEncoder</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">polars</span> <span class="k">as</span> <span class="nn">pl</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">quick_feature.encoding</span> <span class="kn">import</span> <span class="n">WoEEncoder</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">x1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="n">x2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">]))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">woe</span> <span class="o">=</span> <span class="n">WoEEncoder</span><span class="p">()</span>
@@ -226,8 +226,8 @@ RareLabelEncoder().</p>
 </pre></div>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.encoding.WoEEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.WoEEncoder.fit" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.WoEEncoder.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/encoding/woe.py#L223"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.WoEEncoder.fit" title="Link to this definition"></a></dt>
 <dd><p>Learn the WoE.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -243,8 +243,8 @@ Can be the entire dataframe, not just the categorical variables.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.encoding.WoEEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.WoEEncoder.transform" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.WoEEncoder.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/../../miniconda3/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L270"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.WoEEncoder.transform" title="Link to this definition"></a></dt>
 <dd><p>Replace categories with the learned parameters.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>

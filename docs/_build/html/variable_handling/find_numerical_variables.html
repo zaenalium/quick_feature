@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>find_numerical_variables &mdash; fast_feature 0.0.1 documentation</title>
+  <title>find_numerical_variables &mdash; quick_feature 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -32,7 +32,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            fast_feature
+            quick_feature
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -58,7 +58,7 @@
 <li class="toctree-l2"><a class="reference internal" href="find_categorical_variables.html">find_categorical_variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="find_datetime_variables.html">find_datetime_variables</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">find_numerical_variables</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fast_feature.variable_handling.find_numerical_variables"><code class="docutils literal notranslate"><span class="pre">find_numerical_variables()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quick_feature.variable_handling.find_numerical_variables"><code class="docutils literal notranslate"><span class="pre">find_numerical_variables()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="find_categorical_and_numerical_variables.html">find_categorical_and_numerical_variables</a></li>
@@ -77,7 +77,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">fast_feature</a>
+          <a href="../index.html">quick_feature</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -99,10 +99,9 @@
   <section id="find-numerical-variables">
 <h1>find_numerical_variables<a class="headerlink" href="#find-numerical-variables" title="Link to this heading"></a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="fast_feature.variable_handling.find_numerical_variables">
-<span class="sig-prename descclassname"><span class="pre">fast_feature.variable_handling.</span></span><span class="sig-name descname"><span class="pre">find_numerical_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.variable_handling.find_numerical_variables" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.variable_handling.find_numerical_variables">
+<span class="sig-prename descclassname"><span class="pre">quick_feature.variable_handling.</span></span><span class="sig-name descname"><span class="pre">find_numerical_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/variable_handling/find_variables.py#L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.variable_handling.find_numerical_variables" title="Link to this definition"></a></dt>
 <dd><p>Returns a list with the names of all the numerical variables in a dataframe.</p>
-<p>More details in the <span class="xref std std-ref">User Guide</span>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]]</span></p>
@@ -122,8 +121,8 @@
 </dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">polars</span> <span class="k">as</span> <span class="nn">pl</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">fast_feature.variable_handling</span> <span class="kn">import</span> <span class="n">find_numerical_variables</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">quick_feature.variable_handling</span> <span class="kn">import</span> <span class="n">find_numerical_variables</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="s2">&quot;var_num&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="s2">&quot;var_cat&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">],</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="s2">&quot;var_date&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s2">&quot;2020-02-24&quot;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s2">&quot;T&quot;</span><span class="p">)</span>

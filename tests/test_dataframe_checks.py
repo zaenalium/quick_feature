@@ -4,7 +4,7 @@ import pytest
 from pandas.testing import assert_frame_equal, assert_series_equal
 from scipy.sparse import csr_matrix
 
-from fast_feature.dataframe_checks import (
+from quick_feature.dataframe_checks import (
     _check_contains_inf,
     _check_contains_na,
     _check_optional_contains_na,

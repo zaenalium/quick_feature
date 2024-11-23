@@ -1,6 +1,6 @@
 SklearnTransformerWrapper
 =========================
 
-.. autoclass:: fast_feature.wrappers.SklearnTransformerWrapper
+.. autoclass:: quick_feature.wrappers.SklearnTransformerWrapper
     :members:
 

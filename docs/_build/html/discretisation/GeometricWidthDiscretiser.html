@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GeometricWidthDiscretiser &mdash; fast_feature 0.0.1 documentation</title>
+  <title>GeometricWidthDiscretiser &mdash; quick_feature 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -33,7 +33,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            fast_feature
+            quick_feature
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -51,8 +51,8 @@
 <li class="toctree-l2"><a class="reference internal" href="ArbitraryDiscretiser.html">ArbitraryDiscretiser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="DecisionTreeDiscretiser.html">DecisionTreeDiscretiser</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">GeometricWidthDiscretiser</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fast_feature.discretisation.GeometricWidthDiscretiser"><code class="docutils literal notranslate"><span class="pre">GeometricWidthDiscretiser</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.discretisation.GeometricWidthDiscretiser.fit"><code class="docutils literal notranslate"><span class="pre">GeometricWidthDiscretiser.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quick_feature.discretisation.GeometricWidthDiscretiser"><code class="docutils literal notranslate"><span class="pre">GeometricWidthDiscretiser</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.discretisation.GeometricWidthDiscretiser.fit"><code class="docutils literal notranslate"><span class="pre">GeometricWidthDiscretiser.fit()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -77,7 +77,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">fast_feature</a>
+          <a href="../index.html">quick_feature</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -99,8 +99,8 @@
   <section id="geometricwidthdiscretiser">
 <h1>GeometricWidthDiscretiser<a class="headerlink" href="#geometricwidthdiscretiser" title="Link to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="fast_feature.discretisation.GeometricWidthDiscretiser">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fast_feature.discretisation.</span></span><span class="sig-name descname"><span class="pre">GeometricWidthDiscretiser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_boundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.discretisation.GeometricWidthDiscretiser" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.discretisation.GeometricWidthDiscretiser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">quick_feature.discretisation.</span></span><span class="sig-name descname"><span class="pre">GeometricWidthDiscretiser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_boundaries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/discretisation/geometric_width.py#L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.discretisation.GeometricWidthDiscretiser" title="Link to this definition"></a></dt>
 <dd><p>The <code class="docutils literal notranslate"><span class="pre">GeometricWidthDiscretiser()</span></code> divides continuous numerical variables into
 intervals of increasing width. The width of each succeeding interval is larger
 than the previous interval by a constant amount (cw).</p>
@@ -126,10 +126,9 @@ to work properly, it might help to increase the precision value, that is,
 the number of decimal values allowed to define each bin. If the variable has a
 narrow range or you are sorting into several bins, allow greater precision
 (i.e., if precision = 3, then 0.001; if precision = 7, then 0.0001).</p>
-<p>The <a class="reference internal" href="#fast_feature.discretisation.GeometricWidthDiscretiser" title="fast_feature.discretisation.GeometricWidthDiscretiser"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricWidthDiscretiser()</span></code></a> works only with numerical variables.
+<p>The <a class="reference internal" href="#quick_feature.discretisation.GeometricWidthDiscretiser" title="quick_feature.discretisation.GeometricWidthDiscretiser"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeometricWidthDiscretiser()</span></code></a> works only with numerical variables.
 A list of variables to discretise can be indicated, or the discretiser will
 automatically select all numerical variables in the train set.</p>
-<p>More details in the <span class="xref std std-ref">User Guide</span>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -181,25 +180,25 @@ the interval boundaries. If False, it returns integers.</p>
 </table>
 <p class="rubric">References</p>
 <div role="list" class="citation-list">
-<div class="citation" id="r0a15158003bd-1" role="doc-biblioentry">
+<div class="citation" id="r45ca109e5aaf-1" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>J. Reiser, “Classification Systems”,
 <a class="reference external" href="https://www.slideshare.net/johnjreiser/classification-systems">https://www.slideshare.net/johnjreiser/classification-systems</a></p>
 </div>
-<div class="citation" id="r0a15158003bd-2" role="doc-biblioentry">
+<div class="citation" id="r45ca109e5aaf-2" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>Geometric Interval Classification
 <a class="reference external" href="http://wiki.gis.com/wiki/index.php/Geometric_Interval_Classification">http://wiki.gis.com/wiki/index.php/Geometric_Interval_Classification</a></p>
 </div>
-<div class="citation" id="r0a15158003bd-3" role="doc-biblioentry">
+<div class="citation" id="r45ca109e5aaf-3" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></span>
 <p>Geometric progression
 <a class="reference external" href="https://en.wikipedia.org/wiki/Geometric_progression">https://en.wikipedia.org/wiki/Geometric_progression</a></p>
 </div>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.discretisation.GeometricWidthDiscretiser.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.discretisation.GeometricWidthDiscretiser.fit" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.discretisation.GeometricWidthDiscretiser.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/discretisation/geometric_width.py#L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.discretisation.GeometricWidthDiscretiser.fit" title="Link to this definition"></a></dt>
 <dd><p>Learn the boundaries of the geometric width intervals / bins for each
 variable.</p>
 <dl class="field-list simple">

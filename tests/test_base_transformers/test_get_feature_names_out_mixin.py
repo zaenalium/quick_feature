@@ -5,8 +5,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import PolynomialFeatures
 
-from fast_feature._base_transformers.mixins import GetFeatureNamesOutMixin
-from fast_feature.dataframe_checks import check_X
+from quick_feature._base_transformers.mixins import GetFeatureNamesOutMixin
+from quick_feature.dataframe_checks import check_X
 
 variables_str = ["Name", "City", "Age", "Marks", "dob"]
 variables_arr = ["x0", "x1", "x2", "x3", "x4"]

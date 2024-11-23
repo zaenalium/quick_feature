@@ -3,10 +3,10 @@
 Categorical Encoding
 ====================
 
-fast_feature's categorical encoders replace the categories of the variable with
+quick_feature's categorical encoders replace the categories of the variable with
 estimated or arbitrary numbers.
 
-**Summary of fast_feature's encoders characteristics**
+**Summary of quick_feature's encoders characteristics**
 
 ================================= ============ ================= ============== ===============================================================
     Transformer                    Regression	 Classification	   Multi-class    Description
@@ -20,7 +20,7 @@ estimated or arbitrary numbers.
 :class:`RareLabelEncoder()`	           √	            √     	        √         Groups infrequent categories into a single one
 ================================= ============ ================= ============== ===============================================================
 
-fast_feature's categorical encoders encode only variables of type categorical or
+quick_feature's categorical encoders encode only variables of type categorical or
 object by default. From version 1.1.0, you have the option to set the parameter
 `ignore_format` to True to make the transformers also accept numerical variables as
 input.

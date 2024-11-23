@@ -1,6 +1,6 @@
 OrdinalEncoder
 ==============
 
-.. autoclass:: fast_feature.encoding.OrdinalEncoder
+.. autoclass:: quick_feature.encoding.OrdinalEncoder
     :members:
 

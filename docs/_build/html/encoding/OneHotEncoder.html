@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OneHotEncoder &mdash; fast_feature 0.0.1 documentation</title>
+  <title>OneHotEncoder &mdash; quick_feature 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -32,7 +32,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            fast_feature
+            quick_feature
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -45,10 +45,10 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Categorical Encoding</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">OneHotEncoder</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fast_feature.encoding.OneHotEncoder"><code class="docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.encoding.OneHotEncoder.fit"><code class="docutils literal notranslate"><span class="pre">OneHotEncoder.fit()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.encoding.OneHotEncoder.inverse_transform"><code class="docutils literal notranslate"><span class="pre">OneHotEncoder.inverse_transform()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fast_feature.encoding.OneHotEncoder.transform"><code class="docutils literal notranslate"><span class="pre">OneHotEncoder.transform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quick_feature.encoding.OneHotEncoder"><code class="docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.encoding.OneHotEncoder.fit"><code class="docutils literal notranslate"><span class="pre">OneHotEncoder.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.encoding.OneHotEncoder.inverse_transform"><code class="docutils literal notranslate"><span class="pre">OneHotEncoder.inverse_transform()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quick_feature.encoding.OneHotEncoder.transform"><code class="docutils literal notranslate"><span class="pre">OneHotEncoder.transform()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -81,7 +81,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">fast_feature</a>
+          <a href="../index.html">quick_feature</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -103,8 +103,8 @@
   <section id="onehotencoder">
 <h1>OneHotEncoder<a class="headerlink" href="#onehotencoder" title="Link to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="fast_feature.encoding.OneHotEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fast_feature.encoding.</span></span><span class="sig-name descname"><span class="pre">OneHotEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_categories</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_last</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_last_binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.OneHotEncoder" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.OneHotEncoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">quick_feature.encoding.</span></span><span class="sig-name descname"><span class="pre">OneHotEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_categories</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_last</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_last_binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/encoding/one_hot.py#L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.OneHotEncoder" title="Link to this definition"></a></dt>
 <dd><p>The OneHotEncoder() replaces categorical variables by a set of binary variables
 representing each one of the unique categories in the variable.</p>
 <p>The encoder has the option to create k or k-1 binary variables, where k is the
@@ -131,7 +131,6 @@ encoded as 0 in all the binary variables.</p>
 <p><strong>Also Note</strong></p>
 <p>The original categorical variables are removed from the returned dataset when we
 apply the transform() method. In their place, the binary variables are returned.</p>
-<p>More details in the <span class="xref std std-ref">User Guide</span>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -219,7 +218,7 @@ encoding into k-1, the last variable / category will not be examined.</p>
 <p class="rubric">References</p>
 <p>One hot encoding of top categories was described in the following article:</p>
 <div role="list" class="citation-list">
-<div class="citation" id="r392d66bc067e-1" role="doc-biblioentry">
+<div class="citation" id="rc621499a1f52-1" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <p>Niculescu-Mizil, et al. “Winning the KDD Cup Orange Challenge with Ensemble
 Selection”. JMLR: Workshop and Conference Proceedings 7: 23-34. KDD 2009
@@ -228,8 +227,9 @@ Selection”. JMLR: Workshop and Conference Proceedings 7: 23-34. KDD 2009
 </div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">fast_feature.encoding</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">x1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="n">x2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">polars</span> <span class="k">as</span> <span class="nn">pl</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">quick_feature.encoding</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">x1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="n">x2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">]))</span> <span class="c1"># or X = pl.DataFrame(dict(x1 = [1,2,3,4], x2 = [&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;]))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ohe</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ohe</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ohe</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
@@ -241,8 +241,8 @@ Selection”. JMLR: Workshop and Conference Proceedings 7: 23-34. KDD 2009
 </pre></div>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.encoding.OneHotEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.OneHotEncoder.fit" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.OneHotEncoder.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/encoding/one_hot.py#L193"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.OneHotEncoder.fit" title="Link to this definition"></a></dt>
 <dd><p>Learns the unique categories per variable. If top_categories is indicated,
 it will learn the most popular categories. Alternatively, it learns all
 unique categories per variable.</p>
@@ -252,7 +252,7 @@ unique categories per variable.</p>
 <dt><strong>X: polars or pandas dataframe of shape = [n_samples, n_features]</strong></dt><dd><p>The training input samples.
 Can be the entire dataframe, not just seleted variables.</p>
 </dd>
-<dt><strong>y: pandas series, default=None</strong></dt><dd><p>Target. It is not needed in this encoded. You can pass y or
+<dt><strong>y: polars or pandas series, default=None</strong></dt><dd><p>Target. It is not needed in this encoded. You can pass y or
 None.</p>
 </dd>
 </dl>
@@ -261,14 +261,14 @@ None.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.encoding.OneHotEncoder.inverse_transform">
-<span class="sig-name descname"><span class="pre">inverse_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.OneHotEncoder.inverse_transform" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.OneHotEncoder.inverse_transform">
+<span class="sig-name descname"><span class="pre">inverse_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/encoding/one_hot.py#L286"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.OneHotEncoder.inverse_transform" title="Link to this definition"></a></dt>
 <dd><p>inverse_transform is not implemented for this transformer.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="fast_feature.encoding.OneHotEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fast_feature.encoding.OneHotEncoder.transform" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="quick_feature.encoding.OneHotEncoder.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/quick_feature_pl/quick_feature/blob/master/quick_feature/../../miniconda3/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L252"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#quick_feature.encoding.OneHotEncoder.transform" title="Link to this definition"></a></dt>
 <dd><p>Replaces the categorical variables by the binary variables.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>

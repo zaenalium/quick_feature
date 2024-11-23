@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 from sklearn.exceptions import NotFittedError
 
-from fast_feature.discretisation import GeometricWidthDiscretiser
+from quick_feature.discretisation import GeometricWidthDiscretiser
 import polars as pl
 
 # test init params

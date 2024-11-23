@@ -1,4 +1,4 @@
-"""fast_feature transformers select variables during fit or alternatively check
+"""quick_feature transformers select variables during fit or alternatively check
 that the variables entered by the user are of the allowed type.
 
 Some transformers operate only on numerical variables, some on categorical, some

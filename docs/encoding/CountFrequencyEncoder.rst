@@ -1,5 +1,5 @@
 CountFrequencyEncoder
 =====================
 
-.. autoclass:: fast_feature.encoding.CountFrequencyEncoder
+.. autoclass:: quick_feature.encoding.CountFrequencyEncoder
     :members:
