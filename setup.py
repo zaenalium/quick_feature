@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 #from version import find_version
+import build
 from codecs import open
 from os import path
 import re
